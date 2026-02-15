@@ -18,7 +18,7 @@ I spend way too much time staring at my screen, so I decided to build a simple b
 The timer is currently set to **5 seconds** for testing purposes. 
 
 If you want to actually use this for real breaks, open the script and change:
-```python
+```
 time.sleep(5) 
 ```
 to something like `time.sleep(1500)` (which is 25 minutes).
@@ -27,7 +27,7 @@ to something like `time.sleep(1500)` (which is 25 minutes).
 
 You'll need the `pynput` library to control the keyboard.
 
-```bash
+```
 pip install pynput
 ```
 
@@ -35,7 +35,7 @@ pip install pynput
 
 Run the script in your terminal:
 
-```bash
+```
 python main.py
 ```
 
