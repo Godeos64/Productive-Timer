@@ -1,4 +1,3 @@
-Here is the updated README with the newbie flair but without the "What I Learned" section:
 
 # Break Reminder 👋
 
