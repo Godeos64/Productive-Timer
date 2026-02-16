@@ -2,7 +2,9 @@ import time
 from os import _exit
 from pynput import keyboard
 from pynput.keyboard import Key
-
+import sys
+from PyQt6.QtWidgets import QApplication, QMessageBox
+from GUI import MessageBox
 # Config
 
 Controller = keyboard.Controller()
@@ -21,7 +23,7 @@ def on_press(key):  # emergency exit
 listener = keyboard.Listener(on_press=on_press)
 listener.start()
 
-def windows_d():
+def windows_d(): # minimizes/restores all windows by pressing Windows + D
      Controller.press(Key.cmd)
      Controller.press("d")
      Controller.release(Key.cmd)
@@ -32,10 +34,11 @@ def windows_d():
 while Active:
      time.sleep(5) # waits 25 minutes
      windows_d() # minimizes all windows
-     print("take a break, boss!") # random motivation
+     MessageBox("Take a break!", "Break Time").show()
+     
 
-     time.sleep(5) # waits 5 minutes 
+     time.sleep(3) # waits 5 minutes 
 
      windows_d() # restores windows
-     print("let's get back to work.")
+     MessageBox("Let's get back to work!", "Break Over").show()
      
