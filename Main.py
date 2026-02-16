@@ -4,7 +4,7 @@ from pynput import keyboard
 from pynput.keyboard import Key
 import sys
 from PyQt6.QtWidgets import QApplication, QMessageBox
-from GUI import MessageBox
+from GUI_[Light mode] import MessageBox # choose one of the 2 themes in the GUI files.
 # Config
 
 Controller = keyboard.Controller()
