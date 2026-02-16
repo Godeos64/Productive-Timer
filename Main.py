@@ -32,13 +32,13 @@ def windows_d(): # minimizes/restores all windows by pressing Windows + D
 # Main
 
 while Active:
-     time.sleep(5) # waits 25 minutes
+     time.sleep(1500) # waits 25 minutes
      windows_d() # minimizes all windows
-     MessageBox("Take a break!", "Break Time").show()
+     MessageBox("Take a break!", "Break Time")
      
 
-     time.sleep(3) # waits 5 minutes 
+     time.sleep(300) # waits 5 minutes 
 
      windows_d() # restores windows
-     MessageBox("Let's get back to work!", "Break Over").show()
+     MessageBox("Let's get back to work!", "Break Over")
      
