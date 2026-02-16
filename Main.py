@@ -41,11 +41,11 @@ def restore_windows():
 # Main
 
 while Active:
-     time.sleep(5) # waits 25 minutes
+     time.sleep(1500) # waits 25 minutes
      minimize_windows() # minimizes all windows
      MessageBox("Take a break!", "Break Time")
      
 
-     time.sleep(3) # waits 5 minutes 
+     time.sleep(300) # waits 5 minutes 
      MessageBox("Let's get back to work!", "Break Over")
      restore_windows() # restores windows  
